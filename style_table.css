@@ -1,0 +1,56 @@
+.frm{
+    max-width: 800px;
+    height: 600px;
+    margin:auto;
+    background-color:rgb(232, 239, 236);
+    color:rgb(54, 61, 53);
+    font-weight: lighter;
+}
+
+body{
+    background-image: url('table_bg.jpg');
+    opacity:0.9;
+    font-size: 100%;
+    color: rgb(48, 63, 20);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+label {
+    display: inline-block;
+    width:300px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+h1{
+    height:55px;
+    background-color: darkolivegreen;
+    color:whitesmoke;
+    font-weight: 100;
+    font-size: 130%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:initial;
+}
+
+form{
+    background-color:rgb(232, 239, 236);
+    color:rgb(54, 61, 53);
+    font-weight: lighter;
+}
+
+input, select{
+    width:400px;
+    height:40px;
+    border-color: rgb(54, 61, 53);
+    background-color:whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90%;
+    color: rgb(54, 61, 53);
+    font-weight: lighter;
+}
+
+tr{
+    height:12px;
+    width: 35px;
+}

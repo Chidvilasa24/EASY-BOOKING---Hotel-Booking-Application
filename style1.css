@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:5px;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .super-flex-container {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(68, 86, 36);
+  }
+  
+  .super-flex-container > div a img{
+    align-items: center;
+    width: 150px;
+    height: 50px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(68, 86, 36);
+  }
+
+  .flex-container > div {
+    background-color: rgb(68, 86, 36);
+    align-items:flex-end;
+    color:honeydew;
+    width: 140px;
+    height: 50px;
+    margin: 2px;
+    text-align: center;
+    font-size: 20px; 
+  }
+
+  a{
+    text-decoration: none;
+    color:honeydew;
+    font-size: 20px; 
+  }
+
+  .desc-super-flex-container {
+    display: flex;
+    justify-content:space-around;
+    height: 150px;
+  }
+  
+  .desc-super-flex-container > div img{
+    align-items: center;
+    margin: 5px;
+    width: 400px;
+    height: 280px;
+  }
+
+  
+  .desc-flex-container {
+    justify-content: flex-start;
+    margin: 5px;
+    word-spacing: 8px;
+    line-height: 30px;
+    color:rgb(40, 52, 19);
+    font-size: 22px;
+  }
+  
+  /* Style the header */
+  header {
+    padding: 30px;
+    text-align: center;
+    background-color: darkolivegreen;
+    color:honeydew;
+    height:90px;
+    font-weight: lighter;
+    font-size: 250%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:inherit;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 20%;
+    height: 590px; /* only for demonstration, should be removed */
+    background:rgb(230, 246, 204);
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+ 
+    
+    
+  nav ul li{
+    color: darkolivegreen;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  article {
+    float: left;
+    padding: 10px;
+    width: 80%;
+    background-color:rgb(226, 234, 213);
+    height: 590px; 
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+h1{
+    height:10px;
+    text-align: left;
+    font-size: 120%;
+    color:rgb(1, 35, 1);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:500;
+}
+
+
+p{
+    height:10px;
+    text-align: justify;
+    font-size: 90%;
+    color:rgb(5, 67, 5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:400;
+}

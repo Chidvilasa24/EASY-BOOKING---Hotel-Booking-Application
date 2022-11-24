@@ -1,0 +1,34 @@
+ var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.AUTH_EMAIL,
+        pass: process.env.AUTH_PASS
+    }
+    });
+
+    transporter.verify((error, success) => {
+        if(error){
+            console.log(error);
+        }else{
+            console.log("Ready to send mails");
+            console.log(success);
+        }
+    });
+
+
+    var mailOptions = {
+    from: process.env.AUTH_EMAIL,
+    to: email,
+    subject: 'Easy Booking',
+    text: 'Your booking is confirmed'
+    };
+
+    transporter
+        .sendMail(mailOptions)
+        .then(() => {
+            console.log("Mail sent successfully");
+        })
+        .catch((error) => {
+            console.log(error);
+            console.log("Sending mail failed");
+        })

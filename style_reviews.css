@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+
+.ta{
+    align-self: center;
+    border-color: rgb(62, 78, 36);
+    border-radius: 20px;
+    border-width: 3px;
+    font-size:medium;
+    background-color: rgba(224, 252, 158, 0.301);
+    color:rgb(65, 83, 34);
+}
+
+.formr {
+    max-width: 800px;
+    height: 400px;
+    margin:auto;
+    color:rgb(54, 61, 53);
+    font-weight: lighter;    
+}
